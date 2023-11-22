@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.top-nav  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 15px;
+    
+  }
+  .top-nav img {
+    height: 180px; 
+    width: auto; 
+}
+
+  .top-nav   ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  
+
+  }
+
+  .top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .top-nav a:hover {
+    background-color: #16dae9;
+    color: black;
+  }
+
+  
+  
+
+  .top-nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    padding: 14px 16px;
+
+    
+  }
+
+  @media only screen and (max-width: 900px) {
+    .top-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    }
+
+  @media only screen and (max-width: 600px) {
+    .top-nav  li{
+      float: none;
+      width: 100%;
+     
+ 
+  }
+}
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    background-color: white;
+    background-image: url(images/background.png);
+  color:white;
+
+}
+
+h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h2{
+    display: block;
+    margin-block-start: 0.67em;
+    font-size:  1rem;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #16dae9;
+}
+
+
+
+.img{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+hr{
+    
+    border: dotted #eaf6f6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 60px auto;
+}
+
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.signature{
+    justify-content: center;
+    text-align: center;
+}
+
+li{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: #070707;
+    text-decoration: double;
+    
+
+
+}
+
+
+h3{
+    display: block;
+    margin-block-start: 0.67em;
+    font-size:  1rem;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+
+.copyright{
+    text-align: center;
+    color: #000;
+}
+ 
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+  
+   
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;;
+
+}
+
+
+
+@keyframes bubble{
+
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+
+    }
+    70%{
+      
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
+
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;}
+
+
+    .bubbles img:nth-child(3){
+        animation-delay: 3s;
+    }
+    .bubbles img:nth-child(4){
+        animation-delay: 4.5s;
+    }
+    .bubbles img:nth-child(5){
+        animation-delay: 3s;
+    }
+    .bubbles img:nth-child(6){
+        animation-delay: 6s;
+        width: 20px;
+    }
+    .bubbles img:nth-child(7){
+        animation-delay: 7s;
+        width: 35px;
+    }
+
+    
+    .quote{
+        justify-content: center;
+        font-size: 10px;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+
+    .Em{
+        color: #0fdfdf;
+    }
